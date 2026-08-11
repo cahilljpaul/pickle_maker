@@ -12,6 +12,27 @@
         <div class="container">
             <h1>Pickle Marker</h1>
             <p>Build the perfect pickle recipe!</p>
+            <main> 
+                <section class="controls">
+                   <h2>Build Your Pickle</h2>
+                   <label for="Vinegar-slider">Vinegar</label>
+                   <input
+                   type="range"
+                   id="Vinegar-slider"
+                   min="200"
+                   max="500"
+                   step="50"
+                   value="300">
+                </section>
+                <section class="recipie-card">
+                    <h2>Your Pickle Recipe</h2>
+                    <ul>
+                        <li>Vinegar: <span id="Vinegar-value">300</span> ml</li>
+                        <li>Salt: <span id="Salt-value">50</span> g</li>
+                        <li>Water: <span id="Water-value">200</span> ml</li>
+                    </ul>
+                </section>
+            </main>
             <div id="map"></div>
             <script src="script.js"></script>
         </div>
